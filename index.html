@@ -6,22 +6,25 @@
     <title>Simple Interest Calculator</title>
     </head>
     <body>
-        <div class="maindiv"> 
+     </body>
+     <div class="maindiv"> 
             <h1>Simple Interest Calculator</h1>
             Amount <input type="number"  id="principal">  <br/>
-            Rate <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25 list="tickmarks" >
+            <br/>
+            Rate <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate()" list="tickmarks">
             <datalist id="tickmarks">
-                <option value="0" label="0%">
-                <option value="5">
-                <option value="10" label="10%">
-                <option value="15">
-                <option value="20" label="20%">
+            <option value="0">0%</option> 
+            <option value="5">
+            <option value="10">
+            <option value="15">
+            <option value="20">20%</option>
             </datalist>
             <span id="rate_val">
             10.25%
             </span>         
             <br/>
-            No. of Years <input type="number"  id="years"> 
+            <br/>
+            No. of Years <id="years"> 
             <select id="years">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -33,19 +36,21 @@
                 <option value="8">8</option>
                 <option value="9">9</option>
                 <option value="10">10</option>
-            </select>
+            </select>    
             <br/>
-            Interest : <span id="result"></span><br>
-
+            <br/>
             <button onclick="compute()">Compute Interest</button>
-            <span id="result">
+            <br/>
+            <br/>
+            Interest : <span id="result">
+                            
+
             </span>
+            
+            <footer>
+                <br/>
+                &#169; This Calculator belongs to --Raul Mayobre--
+            </footer>
         </div>  
-    </body>
 </html>
-<footer>
 
-        &#169; This Calculator belongs to --Raul Mayobre--
-
-
-</footer>
