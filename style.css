@@ -2,13 +2,4 @@ body {background-color:black;font-family:arial;color:white}
 h1{color:grey;font-family:verdana}
 .maindiv {background-color:white;font-family:arial;color:black;width:500px;padding:20px;border-radius:25px; margin:auto
 }
-.controls {
-   margin: auto;
-   right: 75px;
-  
-}
-.th {
-    padding: 110px;
-}
-
 
