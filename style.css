@@ -7,3 +7,7 @@ h1{color:grey;font-family:verdana}
   background-color: yellow;
 }
 
+output:focus {
+  color: red;
+}
+

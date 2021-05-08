@@ -1,7 +1,7 @@
 function compute()
 {
     p = document.getElementById("principal").value;
-    
+    document.getElementById("principal").style.borderColor = "gray";
     if (p >0){
         var principal = document.getElementById("principal").value;
         var rate = document.getElementById("rate").value;
@@ -18,7 +18,11 @@ function compute()
            
     
     } else {
+            document.getElementById("principal").style.borderColor = "Crimson";
             alert("Enter a positive number")
+            document.getElementById("principal").focus();
+            document.getElementById("result").innerHTML="";
+            
         }
 }
 function updateRate() 
